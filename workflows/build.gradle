@@ -37,7 +37,9 @@ configurations {
     integrationTestRuntime.extendsFrom testRuntime
 }
 
+
 dependencies {
+    implementation "com.r3.conclave:conclave-client:$conclaveVersion"
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
     testCompile "junit:junit:$junit_version"
